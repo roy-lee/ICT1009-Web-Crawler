@@ -19,8 +19,9 @@ public class HomePage {
             public void run() {
                 Date d = new Date();
                 System.out.println("********************");
-                System.out.println("Task scheduled and ran at " + d);
+                System.out.println("Running scheduled task ran at " + d);
                 System.out.println("********************");
+
                 //Facebook - TODAY News
                 SiteInfo facebook = new SiteInfo("https://www.facebook.com/pg/todayonline/posts/", "div.userContent", "span.timestampContent");
                 System.out.println(SiteInfo.getSiteInfo());
@@ -34,15 +35,16 @@ public class HomePage {
 
                 taskCounter += 1;
                 System.out.println("********************");
-                System.out.println("Ran scheduled task for " + taskCounter + " times.");
+                System.out.println("Scheduled task was run for " + taskCounter + " times.");
                 System.out.println("********************");
+                System.out.println("\n");
             }
         };
 
         Timer timer = new Timer();
 
-        long delay = 100;
-        long period = 60000;
+        long delay = 100; // sets delay to run task
+        long period = 120000; // sets interval between scheduled tasks [60000ms = 1min]
         timer.scheduleAtFixedRate(task, delay, period);;
 
     }

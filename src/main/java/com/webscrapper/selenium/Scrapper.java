@@ -18,7 +18,6 @@ public class Scrapper {
     public static void scrape() {
 
 //		Mac OS Chrome Driver
-//		WebDriver site = new ChromeDriver(); //init chrome driver
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--headless"); // scrape in the background without showing browser
         WebDriver site = new ChromeDriver(options);
@@ -43,7 +42,7 @@ public class Scrapper {
 
         while (System.currentTimeMillis() < timer) {
             // Scroll page down
-            site.findElement(By.tagName("body")).sendKeys(Keys.SPACE);
+            site.findElement(By.tagName("body")).sendKeys(Keys.END);
         }
 
         System.out.println(" =============== " + site.getTitle() + " ================= ");

@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="selenium" />
+        <module name="SpringMVC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="selenium" target="1.7" />
+      <module name="SpringMVC" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
