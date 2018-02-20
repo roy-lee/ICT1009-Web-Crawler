@@ -25,7 +25,7 @@ public class Scrapper {
         String siteName = SiteInfo.getSiteName();
         String dataTitle = SiteInfo.getSiteDataTitle();
         String dataTime = SiteInfo.getSiteDataTime();
-        int dataID = 0;
+
 
         site.navigate().to(siteName);
 
@@ -48,6 +48,7 @@ public class Scrapper {
         System.out.println(" =============== " + site.getTitle() + " ================= ");
 
         // Get latest dataID in database
+        int dataID = 0;
         try {
             dataID = DatabaseConnection.getLastID();
         } catch (SQLException e) {

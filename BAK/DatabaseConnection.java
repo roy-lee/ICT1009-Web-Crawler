@@ -1,4 +1,3 @@
-package com.webscrapper.selenium;
 import java.sql.*;
 
 public class DatabaseConnection {

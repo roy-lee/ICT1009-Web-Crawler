@@ -6,8 +6,6 @@ public class SiteInfo {
     static String dataTitle;
     static String dataTime;
 
-    String title;
-
     SiteInfo(String newSiteName, String newDataTitle, String newDataTime) {
         siteName = newSiteName;
         dataTitle = newDataTitle;
@@ -28,7 +26,9 @@ public class SiteInfo {
     }
 
     public static String getSiteInfo() {
-        return "Scrapping: " + SiteInfo.getSiteName() + "\nTitle CSS Selector: " + SiteInfo.getSiteDataTitle() + "\nDate CSS Selector: " + SiteInfo.getSiteDataTime();
+        return "Scrapping: " + SiteInfo.getSiteName() +
+                "\nTitle CSS Selector: " + SiteInfo.getSiteDataTitle() +
+                "\nDate CSS Selector: " + SiteInfo.getSiteDataTime();
     }
 
 }
