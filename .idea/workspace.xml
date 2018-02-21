@@ -7,32 +7,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bbd3552a-e763-4176-9fc9-e2e57214fbdf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/SpringMVC_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_8_3.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/SpringMVC/src/TestingServlet.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/redditDatabaseConnection.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SentiApp.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" afterPath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" />
-      <change beforePath="$PROJECT_DIR$/SpringMVC/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/SpringMVC/src/main/webapp/WEB-INF/web.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/BAK/DatabaseConnection.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BAK/HomePage.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BAK/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BAK/Scrapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/BAK/SiteInfo.java" afterPath="" />
       <change beforePath="$PROJECT_DIR$/selenium.iml" afterPath="$PROJECT_DIR$/selenium.iml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/DatabaseConnection.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/HomePage.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Scrapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SiteInfo.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/DatabaseConnection.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/HomePage$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/HomePage.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/Scrapper.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/SiteInfo.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/redditDatabaseConnection.java" afterPath="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/redditDatabaseConnection.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/webscrapper/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/webscrapper/selenium/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/webscrapper/selenium/SeleniumHQTest.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/drivers/chromedriver-mac-32bit" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/SpiderLeg.class" afterPath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/SpiderLeg.class" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/redditDatabaseConnection.class" afterPath="$PROJECT_DIR$/target/classes/com/webscrapper/selenium/redditDatabaseConnection.class" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/webscrapper/selenium/SeleniumHQTest.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/drivers/Icon&#13;" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/drivers/chromedriver-mac-32bit" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/SpringMVC/target/" />
@@ -45,22 +47,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="redditDatabaseConnection.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="redditDatabaseConnection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/redditDatabaseConnection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1102">
-              <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
+            <state relative-caret-position="312">
+              <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
-                <marker date="1519094813277" expanded="true" signature="2714:2763" ph="SELECT * FRO... redditPost" />
-                <marker date="1519094813277" expanded="true" signature="3477:3521" ph="SELECT * FRO... scrappedData" />
-                <marker date="1519094813277" expanded="true" signature="4206:4230" ph="SELECT * FRO... redditPost" />
-                <marker date="1519094813277" expanded="true" signature="4904:4931" ph="SELECT * FRO... redditComment" />
-                <marker date="1519094813277" expanded="true" signature="5626:5670" ph="SELECT * FRO... redditPost" />
-                <marker date="1519094813277" expanded="true" signature="6470:6514" ph="SELECT * FRO... redditPost" />
-                <marker date="1519094813277" expanded="true" signature="7104:7150" ph="INSERT INTO redditComment" />
-                <marker date="1519094813277" expanded="true" signature="8216:8259" ph="INSERT INTO scrappedData" />
-                <marker date="1519094813277" expanded="true" signature="8979:8993" ph="SELECT * FRO... scrappedData" />
-                <marker date="1519094813277" expanded="true" signature="8979:9003" ph="SELECT * FRO... redditPost" />
+                <element signature="imports" expanded="true" />
+                <marker date="1519214233987" expanded="true" signature="2758:2807" ph="SELECT * FRO... redditPost" />
+                <marker date="1519214233987" expanded="true" signature="3521:3565" ph="SELECT * FRO... scrappedData" />
+                <marker date="1519214233987" expanded="true" signature="4250:4274" ph="SELECT * FRO... redditPost" />
+                <marker date="1519214233987" expanded="true" signature="4948:4975" ph="SELECT * FRO... redditComment" />
+                <marker date="1519214233987" expanded="true" signature="5670:5714" ph="SELECT * FRO... redditPost" />
+                <marker date="1519214233987" expanded="true" signature="6514:6558" ph="SELECT * FRO... redditPost" />
+                <marker date="1519214233987" expanded="true" signature="7148:7194" ph="INSERT INTO redditComment" />
+                <marker date="1519214233987" expanded="true" signature="8269:8312" ph="INSERT INTO scrappedData" />
+                <marker date="1519214233987" expanded="true" signature="9027:9083" ph="UPDATE redditPost... " />
+                <marker date="1519214233987" expanded="true" signature="9034:9066" ph="INSERT INTO redditPost" />
+                <marker date="1519214233987" expanded="true" signature="9770:9784" ph="SELECT * FRO... scrappedData" />
+                <marker date="1519214233987" expanded="true" signature="9770:9794" ph="SELECT * FRO... redditPost" />
               </folding>
             </state>
           </provider>
@@ -69,12 +74,23 @@
       <file leaf-file-name="SpiderLeg.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="120" column="40" lean-forward="true" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
+            <state relative-caret-position="210">
+              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <element signature="e#9756#9757#0" expanded="true" />
+                <element signature="e#9780#9781#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SentiApp.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SentiApp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#7262#7263#0" expanded="true" />
-                <element signature="e#7286#7287#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,38 +99,8 @@
       <file leaf-file-name="RedditHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomePage.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/BAK/HomePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14">
-              <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scrapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BAK/Scrapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SiteInfo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BAK/SiteInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="6" selection-end-column="21" />
+            <state relative-caret-position="675">
+              <caret line="51" column="66" lean-forward="false" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -123,8 +109,8 @@
       <file leaf-file-name="Spider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+            <state relative-caret-position="675">
+              <caret line="48" column="82" lean-forward="true" selection-start-line="48" selection-start-column="82" selection-end-line="49" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -133,9 +119,11 @@
       <file leaf-file-name="mainSpider.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="675">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/SpringMVC/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -166,6 +154,7 @@
       <find>pageTitle</find>
       <find>commentData</find>
       <find>redditReply</find>
+      <find>Success</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -189,15 +178,20 @@
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SiteInfo.java" />
         <option value="$PROJECT_DIR$/SpringMVC/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Scrapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/DatabaseConnection.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/BAK/DatabaseConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java" />
+        <option value="$PROJECT_DIR$/BAK/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SentiStrength.java" />
+        <option value="$PROJECT_DIR$/BAK/Scrapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/webscrapper/selenium/SeleniumHQTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SentiApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/redditDatabaseConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java" />
       </list>
     </option>
   </component>
@@ -215,7 +209,8 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="33" />
+    <option name="x" value="-12" />
+    <option name="y" value="22" />
     <option name="width" value="1280" />
     <option name="height" value="778" />
   </component>
@@ -250,33 +245,7 @@
             <path>
               <item name="ICT1009-Web-Crawler" type="b2602c69:ProjectViewProjectNode" />
               <item name="ICT1009-Web-Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="BAK" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ICT1009-Web-Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICT1009-Web-Crawler" type="462c0819:PsiDirectoryNode" />
               <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ICT1009-Web-Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICT1009-Web-Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ICT1009-Web-Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICT1009-Web-Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ICT1009-Web-Crawler" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ICT1009-Web-Crawler" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringMVC" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ICT1009-Web-Crawler" type="b2602c69:ProjectViewProjectNode" />
@@ -332,8 +301,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
@@ -365,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.index.jsp (1)">
+  <component name="RunManager" selected="Application.mainSpider">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -381,6 +350,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.webscrapper.selenium.HomePage" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="selenium" />
+      <envs />
+    </configuration>
+    <configuration name="SentiApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.webscrapper.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.webscrapper.selenium.SentiApp" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -428,6 +416,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.webscrapper.selenium.mainSpider" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="selenium" />
+      <envs />
+    </configuration>
+    <configuration name="redditDatabaseConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.webscrapper.selenium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.webscrapper.selenium.redditDatabaseConnection" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -604,65 +611,28 @@
         </option>
       </method>
     </configuration>
-    <configuration name="index.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 8.0.49" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/index.jsp" />
-      <deployment>
-        <artifact name="SpringMVC:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="index_jsp_ICT1009-Web-Crawler" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="SpringMVC:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="6">
+    <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
       <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
       <item index="2" class="java.lang.String" itemvalue="Application.HomePage" />
-      <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
-      <item index="4" class="java.lang.String" itemvalue="Application.mainSpider" />
+      <item index="3" class="java.lang.String" itemvalue="Application.mainSpider" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SentiApp" />
       <item index="5" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (1)" />
+      <item index="6" class="java.lang.String" itemvalue="Application.redditDatabaseConnection" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.mainSpider" />
-        <item index="2" class="java.lang.String" itemvalue="Application.HomePage" />
-        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.mainSpider" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SentiApp" />
+        <item index="2" class="java.lang.String" itemvalue="Application.redditDatabaseConnection" />
+        <item index="3" class="java.lang.String" itemvalue="Tomcat Server.index.jsp (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Application.HomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -679,12 +649,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1518602219776</updated>
-      <workItem from="1518845587765" duration="28640000" />
+      <workItem from="1518845587765" duration="50454000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28640000" />
+    <option name="totallyTimeSpent" value="50454000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="778" extended-state="6" />
@@ -702,16 +672,16 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28895184" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50141644" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27620396" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2917847" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.271875" sideWeight="0.48336595" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.271875" sideWeight="0.51663405" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.271875" sideWeight="0.716" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.271875" sideWeight="0.284" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -739,30 +709,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Scrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVC/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpringMVC/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -1059,22 +1005,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/redditDatabase.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1083,65 +1013,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringMVC/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/redditDatabaseConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="225" column="0" lean-forward="false" selection-start-line="225" selection-start-column="0" selection-end-line="225" selection-end-column="0" />
-          <folding>
-            <marker date="1519094813277" expanded="true" signature="2714:2763" ph="SELECT * FRO... redditPost" />
-            <marker date="1519094813277" expanded="true" signature="3477:3521" ph="SELECT * FRO... scrappedData" />
-            <marker date="1519094813277" expanded="true" signature="4206:4230" ph="SELECT * FRO... redditPost" />
-            <marker date="1519094813277" expanded="true" signature="4904:4931" ph="SELECT * FRO... redditComment" />
-            <marker date="1519094813277" expanded="true" signature="5626:5670" ph="SELECT * FRO... redditPost" />
-            <marker date="1519094813277" expanded="true" signature="6470:6514" ph="SELECT * FRO... redditPost" />
-            <marker date="1519094813277" expanded="true" signature="7104:7150" ph="INSERT INTO redditComment" />
-            <marker date="1519094813277" expanded="true" signature="8216:8259" ph="INSERT INTO scrappedData" />
-            <marker date="1519094813277" expanded="true" signature="8979:8993" ph="SELECT * FRO... scrappedData" />
-            <marker date="1519094813277" expanded="true" signature="8979:9003" ph="SELECT * FRO... redditPost" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="120" column="40" lean-forward="true" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#7262#7263#0" expanded="true" />
-            <element signature="e#7286#7287#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BAK/DatabaseConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1638">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BAK/Scrapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="68" column="30" lean-forward="false" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1154,11 +1029,112 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SpringMVC/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SentiStrength.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BAK/Scrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="68" column="24" lean-forward="false" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BAK/HomePage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="26" column="11" lean-forward="true" selection-start-line="26" selection-start-column="11" selection-end-line="26" selection-end-column="59" />
+        <state relative-caret-position="150">
+          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/webscrapper/selenium/SeleniumHQTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="34" lean-forward="false" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/Spider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="48" column="82" lean-forward="true" selection-start-line="48" selection-start-column="82" selection-end-line="49" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/RedditHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="51" column="66" lean-forward="false" selection-start-line="51" selection-start-column="66" selection-end-line="51" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SentiApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/mainSpider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/SpiderLeg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="e#9756#9757#0" expanded="true" />
+            <element signature="e#9780#9781#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/webscrapper/selenium/redditDatabaseConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="23" column="49" lean-forward="false" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1519214233987" expanded="true" signature="2758:2807" ph="SELECT * FRO... redditPost" />
+            <marker date="1519214233987" expanded="true" signature="3521:3565" ph="SELECT * FRO... scrappedData" />
+            <marker date="1519214233987" expanded="true" signature="4250:4274" ph="SELECT * FRO... redditPost" />
+            <marker date="1519214233987" expanded="true" signature="4948:4975" ph="SELECT * FRO... redditComment" />
+            <marker date="1519214233987" expanded="true" signature="5670:5714" ph="SELECT * FRO... redditPost" />
+            <marker date="1519214233987" expanded="true" signature="6514:6558" ph="SELECT * FRO... redditPost" />
+            <marker date="1519214233987" expanded="true" signature="7148:7194" ph="INSERT INTO redditComment" />
+            <marker date="1519214233987" expanded="true" signature="8269:8312" ph="INSERT INTO scrappedData" />
+            <marker date="1519214233987" expanded="true" signature="9027:9083" ph="UPDATE redditPost... " />
+            <marker date="1519214233987" expanded="true" signature="9034:9066" ph="INSERT INTO redditPost" />
+            <marker date="1519214233987" expanded="true" signature="9770:9784" ph="SELECT * FRO... scrappedData" />
+            <marker date="1519214233987" expanded="true" signature="9770:9794" ph="SELECT * FRO... redditPost" />
+          </folding>
         </state>
       </provider>
     </entry>

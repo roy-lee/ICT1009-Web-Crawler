@@ -46,8 +46,8 @@ public class Spider
           }
           boolean success = leg.searchForWord(searchWord);
           if(success) {
-              System.out.println(String.format("**Success** Word %s found at %s", searchWord, currentUrl));
-              System.out.println(currentUrl);
+//              System.out.println(String.format("**Success** Word %s found at %s", searchWord, currentUrl));
+//              System.out.println(currentUrl);
               //break;
           }
           this.pagesToVisit.addAll(leg.getLinks());

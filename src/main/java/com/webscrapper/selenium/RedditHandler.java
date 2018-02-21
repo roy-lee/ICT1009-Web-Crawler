@@ -38,4 +38,37 @@ public class RedditHandler
         }
         return redditReplies;
     }
+
+//    public static ArrayList<String> grabRawRedditRepliesDateTimeHtml(String url) {
+//        ArrayList<String> redditRepliesDateTime = new ArrayList<>();
+//
+//        for(String redditReplyDateTime : redditRepliesDateTime) {
+//            System.out.println(String.format("[TIME] Commented at: %s", redditReplyDateTime));
+//        }
+//        try {
+//            //-----------------------Get the replies from a reddit topic------------------------------------------------
+//            Document redditPageDoc = Jsoup.connect(url)
+//                    .userAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) " +
+//                            "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.101 Safari/537.36")
+//                    .referrer("https://www.google.com.au")
+//                    .header("DNT","1")
+//                    .get();
+//
+//            Elements rawReplyTimeElements = redditPageDoc.getElementsByAttribute("time").select("datetime");
+//
+//
+////            Elements rawReplyTimeElements = redditPageDoc.getElementsByAttribute("time").select("datetime");
+//
+//            for(Element element : rawReplyTimeElements) {
+//                //SKIPPING USELESS LINKS WITHIN COMMENTS
+//                if (!element.toString().contains("a href=")) {
+//                    redditRepliesDateTime.add(element.html());
+//                }
+//            }
+//        }
+//        catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        return redditRepliesDateTime;
+//    }
 }

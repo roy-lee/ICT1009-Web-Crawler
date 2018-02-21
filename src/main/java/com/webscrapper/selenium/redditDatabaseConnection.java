@@ -1,4 +1,6 @@
 package com.webscrapper.selenium;
+import com.mysql.jdbc.MysqlDataTruncation;
+
 import java.sql.*;
 
 public class redditDatabaseConnection {
@@ -219,24 +221,24 @@ public class redditDatabaseConnection {
             dbPrepareStat.setString(3, commentData);
             dbPrepareStat.setString(4, commentDate);
 
-            System.out.println(dbPrepareStat.toString());
+//            System.out.println(dbPrepareStat.toString());
 
             // execute insert SQL statement
             dbPrepareStat.executeUpdate();
 
-            System.out.println("Comment is " + commentData + "\nCommentID is " +commentID);
-            System.out.println("Post title is " + postTitle + "\nPostID is " + getPostID(postTitle));
-            System.out.println("CommentDate is " + commentDate);
-
-            System.out.println("added successfully on " + commentDate);
-            System.out.println("********************");
+//            System.out.println("Comment is " + commentData + "\nCommentID is " +commentID);
+//            System.out.println("Post title is " + postTitle + "\nPostID is " + getPostID(postTitle));
+//            System.out.println("CommentDate is " + commentDate);
+//
+//            System.out.println("added successfully.");
+//            System.out.println("********************");
         } catch (SQLException e) {
             e.printStackTrace();
         }
 
     }
 
-    public static void addDataToDB(int postID, String postTitle, String postLink, String postDate) {
+    public static void addDataToDB(int postID, String postTitle, String postLink, String sentimentPlaceHolder) {
 
         try {
 
@@ -246,12 +248,32 @@ public class redditDatabaseConnection {
             dbPrepareStat.setInt(1, postID);
             dbPrepareStat.setString(2, postTitle);
             dbPrepareStat.setString(3, postLink);
-            dbPrepareStat.setString(4, postDate);
+            dbPrepareStat.setString(4, sentimentPlaceHolder);
 
             // execute insert SQL statement
             dbPrepareStat.executeUpdate();
-            System.out.println("added successfully on " + postDate);
-            System.out.println("********************");
+            System.out.println("Post added successfully.");
+//            System.out.println("********************");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void addSentimentToDB(int postID, String sentiment) {
+
+        try {
+
+            String insertQueryStatement = "UPDATE redditPost SET postSentiment = ? WHERE postID = ?";
+            dbPrepareStat = dbConnection.prepareStatement(insertQueryStatement);
+
+            dbPrepareStat.setString(1, sentiment);
+            dbPrepareStat.setInt(2, postID);
+
+//            System.out.println(dbPrepareStat.toString());
+            // execute insert SQL statement
+            dbPrepareStat.executeUpdate();
+//            System.out.println("Post has " + sentiment + " sentiment");
+//            System.out.println("********************");
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -277,7 +299,7 @@ public class redditDatabaseConnection {
                 String postDate = rs.getString("postDate");
 
                 // Simply Print the results
-                System.out.format("%s, %s, %s, %s, %s\n", postID, postTitle, postLink, postDate);
+                System.out.format("%s, %s, %s\n", postID, postTitle, postLink);
             }
 
         } catch (SQLException e) {

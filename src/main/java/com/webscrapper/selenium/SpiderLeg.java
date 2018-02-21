@@ -1,25 +1,19 @@
 package com.webscrapper.selenium;
 
+import org.jsoup.Connection;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import uk.ac.wlv.sentistrength.SentiStrength;
+
 import java.io.IOException;
-import java.io.StringWriter;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
-
-import org.jsoup.Connection;
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 
 
 public class SpiderLeg{
@@ -40,6 +34,15 @@ public class SpiderLeg{
 	 * @return whether or not the crawl was successful
 	 */
 	public boolean crawl (String url) {
+
+		//Method 2: One initialisation and repeated classifications
+		SentiStrength sentiStrength = new SentiStrength();
+//Create an array of command line parameters to send (not text or file to process)
+		String ssthInitialisation[] = {"sentidata", "/Users/roylee/Downloads/SentiStrength/SentiStrength_DataEnglishFeb2017/", "trinary"};
+		sentiStrength.initialise(ssthInitialisation); //Initialise
+		//Trinary mode: -1 = negative, 0 = neutral, 1 = positive
+//can now calculate sentiment scores quickly without having to initialise again
+
 		try {
 			//----------------Established a connection to the web page, return false if failed--------------------------
 			Connection connection = Jsoup.connect(url).userAgent(USER_AGENT);
@@ -101,45 +104,106 @@ public class SpiderLeg{
                 RedditHandler redditHandler = new RedditHandler();
                 ArrayList<String> redditReplies = RedditHandler.grabRawRedditRepliesHtml(redditUrl);
 
-                System.out.println("-----------------------------New post------------------------------------");
-                System.out.println(String.format("[POST] %s", redditUrl));
+//				ArrayList<String> redditDateTimeReplies = RedditHandler.grabRawRedditRepliesDateTimeHtml(redditUrl);
+//				Element timestamp = htmlDocument.select("time").first();
+//				String dateTime = timestamp.attr("datetime");
+//				System.out.println("DateTime title: " + dateTime);
+//
+//                for (String redditDateTime : redditDateTimeReplies) {
+//                	System.out.println(redditDateTime);
+//				}
 
 				Connection redditPostPage = Jsoup.connect(redditUrl).userAgent(USER_AGENT);
 				Document element = redditPostPage.get();
 				Elements pageTitle = element.select("a.title");
-				System.out.println("Page title: " + pageTitle.text());
 
-                redditReplies.remove(0);
+				redditReplies.remove(0);
 
+				int numberOfComments= 0, tempPostID = 0;
+				int positiveComment = 0,positiveSentimentValue= 0, posVal = 0;
+				int negativeComment = 0,negativeSentimentValue = 0, negVal = 0;
+				int neutralComment = 0,neutralSentimentValue = 0, neutralVal = 0;
+				String dataSentiment = "";
 				try {
+					tempPostID = postID;
 					if (redditDatabaseConnection.existingTitleChecker(pageTitle.text()) != false) {
-						redditDatabaseConnection.addDataToDB(postID,pageTitle.text().toString(),redditUrl,"00:00:00.000000");
+						System.out.println("-----------------------------New post------------------------------------");
+						redditDatabaseConnection.addDataToDB(postID,pageTitle.text().toString(),redditUrl,"");
+
 						postID += 1;
-					} else {
 					}
-				} catch (SQLException e) {
+
+					for(String redditReply : redditReplies)
+					{
+						try {
+							if (redditDatabaseConnection.existingCommentChecker(redditReply) != false) {
+								redditDatabaseConnection.addCommentToDB(commentID,redditReply, "00:00:00.000000", pageTitle.text().toString());
+								commentID += 1;
+								numberOfComments+=1;
+							}
+							String emotion = sentiStrength.computeSentimentScores(redditReply);
+							String[] sentiAnalysis = emotion.split(" ", -1);
+
+							positiveSentimentValue = Integer.valueOf(sentiAnalysis[0]);
+							negativeSentimentValue = Math.abs(Integer.valueOf(sentiAnalysis[1]));
+							neutralSentimentValue = Math.abs(Integer.valueOf(sentiAnalysis[2]));
+
+							posVal += positiveSentimentValue;
+							negVal += negativeSentimentValue;
+							neutralVal += neutralSentimentValue;
+						}
+						catch (SQLException e) {
+							e.printStackTrace();
+						}
+
+					}
+
+					System.out.println("Page title: " + pageTitle.text());
+					System.out.println(String.format("[URL] %s", redditUrl));
+
+				} catch (SQLException | IndexOutOfBoundsException e) {
 					e.printStackTrace();
+				} finally {
+					if (posVal > negVal && posVal > neutralVal) {
+						dataSentiment = "Positive";
+						//Here you determine second biggest, but you know that a is largest
+					}
+
+					if (negVal > posVal && negVal > neutralVal) {
+						dataSentiment = "Negative";
+						//Here you determine second biggest, but you know that b is largest
+					}
+
+					if (neutralVal > negVal && neutralVal > posVal || posVal == negVal) {
+						dataSentiment = "Neutral";
+						//Here you determine second biggest, but you know that c is largest
+					}
+					redditDatabaseConnection.addSentimentToDB(tempPostID, dataSentiment);
+					tempPostID = postID;
+
 				}
 
-                for(String redditReply : redditReplies)
-                {
-//                	redditDatabaseConnection.addCommentToDB(commentID,redditReply,"00:00:00.000000",pageTitle.text().toString());
-//					commentID += 1;
-//					redditDatabaseConnection.addCommentToDB(commentID,redditReply, "00:00:00.000000", pageTitle.text().toString());
-					try {
-						if (redditDatabaseConnection.existingCommentChecker(redditReply) != false) {
-							redditDatabaseConnection.addCommentToDB(commentID,redditReply, "00:00:00.000000", pageTitle.text().toString());
-//							System.out.println(String.format("[COMMENT] %s", redditReply));
-							commentID += 1;
-						} else {
-							break;
-						}
-					} catch (SQLException e) {
-						e.printStackTrace();
-					}
 
-                }
+
+
+
+				// create method to check return true false in postsentiment ****
+//				redditDatabaseConnection.addSentimentToDB(postID,dataSentiment);
+
+				if (numberOfComments == 0) {
+					System.out.println("No new comments since last scrape.");
+					System.out.println("Overall sentiment: " + dataSentiment);
+				} else {
+					System.out.println("Scrapped " + numberOfComments + " comments.");
+//					System.out.println(posVal + " positive points");
+//					System.out.println(Math.abs(negVal) + " negative points");
+//					System.out.println(Math.abs(neutralVal) + " neutral points");
+					System.out.println("Overall sentiment: " + dataSentiment);
+				}
+				System.out.println("********************");
+
             }
+
 //			System.out.println("Found (" + linksOnPage.size() + ") links");
 			for (Element link : linksOnPage) {
 				this.links.add(link.absUrl("href"));
@@ -179,7 +243,7 @@ public class SpiderLeg{
 			System.out.println("ERROR! Call crawl() before performing analysis on the document");
 			return false;
 		}
-		System.out.println("Searching for the word " + searchWord + "...");
+//		System.out.println("Searching for the word " + searchWord + "...");
 		String bodyText = this.htmlDocument.body().text();
 		return bodyText.toLowerCase().contains(searchWord.toLowerCase());
 	}
