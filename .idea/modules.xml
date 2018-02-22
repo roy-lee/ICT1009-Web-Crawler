@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SpringMVC/SpringMVC.iml" filepath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" />
-      <module fileurl="file://$PROJECT_DIR$/selenium.iml" filepath="$PROJECT_DIR$/selenium.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jspUI/JBDC.iml" filepath="$PROJECT_DIR$/jspUI/JBDC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jsoup.iml" filepath="$PROJECT_DIR$/jsoup.iml" />
     </modules>
   </component>
 </project>
