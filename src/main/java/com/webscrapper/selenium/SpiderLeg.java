@@ -104,15 +104,6 @@ public class SpiderLeg{
                 RedditHandler redditHandler = new RedditHandler();
                 ArrayList<String> redditReplies = RedditHandler.grabRawRedditRepliesHtml(redditUrl);
 
-//				ArrayList<String> redditDateTimeReplies = RedditHandler.grabRawRedditRepliesDateTimeHtml(redditUrl);
-//				Element timestamp = htmlDocument.select("time").first();
-//				String dateTime = timestamp.attr("datetime");
-//				System.out.println("DateTime title: " + dateTime);
-//
-//                for (String redditDateTime : redditDateTimeReplies) {
-//                	System.out.println(redditDateTime);
-//				}
-
 				Connection redditPostPage = Jsoup.connect(redditUrl).userAgent(USER_AGENT);
 				Document element = redditPostPage.get();
 				Elements pageTitle = element.select("a.title");
@@ -120,9 +111,9 @@ public class SpiderLeg{
 				redditReplies.remove(0);
 
 				int numberOfComments= 0, tempPostID = 0;
-				int positiveComment = 0,positiveSentimentValue= 0, posVal = 0;
-				int negativeComment = 0,negativeSentimentValue = 0, negVal = 0;
-				int neutralComment = 0,neutralSentimentValue = 0, neutralVal = 0;
+				int positiveSentimentValue, posVal = 0;
+				int negativeSentimentValue, negVal = 0;
+				int neutralSentimentValue, neutralVal = 0;
 				String dataSentiment = "";
 				try {
 					tempPostID = postID;
@@ -137,7 +128,30 @@ public class SpiderLeg{
 					{
 						try {
 							if (redditDatabaseConnection.existingCommentChecker(redditReply) != false) {
-								redditDatabaseConnection.addCommentToDB(commentID,redditReply, "00:00:00.000000", pageTitle.text().toString());
+
+								String emotion = sentiStrength.computeSentimentScores(redditReply);
+								String[] sentiAnalysis = emotion.split(" ", -1);
+
+								int commentPositiveSentiment = Integer.valueOf(sentiAnalysis[0]);
+                                int commentNegativeSentiment = Math.abs(Integer.valueOf(sentiAnalysis[1]));
+                                int commentNeutralSentiment = Math.abs(Integer.valueOf(sentiAnalysis[2]));
+
+								if (commentPositiveSentiment > commentNegativeSentiment && commentPositiveSentiment > commentNeutralSentiment) {
+									dataSentiment = "Positive";
+									//Here you determine second biggest, but you know that a is largest
+								}
+
+								if (commentNegativeSentiment > commentPositiveSentiment && commentNegativeSentiment > commentNeutralSentiment) {
+									dataSentiment = "Negative";
+									//Here you determine second biggest, but you know that b is largest
+								}
+
+								if (commentNeutralSentiment > commentNegativeSentiment && commentNeutralSentiment > commentPositiveSentiment || commentPositiveSentiment == commentNegativeSentiment) {
+									dataSentiment = "Neutral";
+									//Here you determine second biggest, but you know that c is largest
+								}
+//								System.out.println("Comment: "+ redditReply + "\nSentiment: " + dataSentiment);
+								redditDatabaseConnection.addCommentToDB(commentID,redditReply, pageTitle.text().toString(),dataSentiment);
 								commentID += 1;
 								numberOfComments+=1;
 							}
@@ -183,21 +197,14 @@ public class SpiderLeg{
 
 				}
 
-
-
-
-
-				// create method to check return true false in postsentiment ****
-//				redditDatabaseConnection.addSentimentToDB(postID,dataSentiment);
-
 				if (numberOfComments == 0) {
 					System.out.println("No new comments since last scrape.");
 					System.out.println("Overall sentiment: " + dataSentiment);
 				} else {
 					System.out.println("Scrapped " + numberOfComments + " comments.");
-//					System.out.println(posVal + " positive points");
-//					System.out.println(Math.abs(negVal) + " negative points");
-//					System.out.println(Math.abs(neutralVal) + " neutral points");
+					System.out.println(posVal + " positive points");
+					System.out.println(Math.abs(negVal) + " negative points");
+					System.out.println(Math.abs(neutralVal) + " neutral points");
 					System.out.println("Overall sentiment: " + dataSentiment);
 				}
 				System.out.println("********************");

@@ -35,7 +35,7 @@ public class mainSpider {
         Timer timer = new Timer();
 
         long delay = 100; // sets delay to run task
-        long period = 600000; // sets interval between scheduled tasks [60000 ms = 1min]
+        long period = 300000; // sets interval between scheduled tasks [60000 ms = 1min]
         timer.scheduleAtFixedRate(task, delay, period);;
 
 
