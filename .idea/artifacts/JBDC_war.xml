@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="JBDC:war">
+    <output-path>$PROJECT_DIR$/jspUI/target</output-path>
+    <root id="archive" name="SpringMVC.war">
+      <element id="artifact" artifact-name="JBDC:war exploded" />
+    </root>
+  </artifact>
+</component>

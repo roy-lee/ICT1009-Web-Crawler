@@ -10,8 +10,6 @@ public class ScraperMain {
         System.setProperty("webdriver.chrome.driver" ,  "/Applications/chromedriver");
         redditDatabaseConnection.makeRedditConnection();
 
-        int taskCounter = 0;
-
         final TimerTask task = new TimerTask() {
             int taskCounter = 0;
             public void run() {

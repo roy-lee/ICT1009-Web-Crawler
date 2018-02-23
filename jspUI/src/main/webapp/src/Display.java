@@ -46,7 +46,7 @@ public class Display extends HttpServlet {
             out.println("<td>"+ds.decideEmoticon(robj.senti)+"</td>");
             out.println("<td><a href='./DisplayComments?pid="+robj.sn+"'>View comments</a></td>");
             out.println("</tr>");
-     }
+        }
      out.println("</table>");
     }
 }

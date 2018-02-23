@@ -108,17 +108,16 @@ public class Crawler {
                 String dataSentiment = "";
                 try {
                     tempPostID = postID;
-                    if (redditDatabaseConnection.existingTitleChecker(pageTitle.text()) != false) {
+                    if (redditDatabaseConnection.existingTitleChecker(pageTitle.text())) {
                         System.out.println("-----------------------------New post------------------------------------");
-                        redditDatabaseConnection.addDataToDB(postID,pageTitle.text().toString(),redditUrl,"");
-
+                        redditDatabaseConnection.addDataToDB(postID, pageTitle.text(),redditUrl,"");
                         postID += 1;
                     }
 
                     for(String redditReply : redditReplies)
                     {
                         try {
-                            if (redditDatabaseConnection.existingCommentChecker(redditReply) != false) {
+                            if (redditDatabaseConnection.existingCommentChecker(redditReply)) {
 
                                 String emotion = sentiStrength.computeSentimentScores(redditReply);
                                 String[] sentiAnalysis = emotion.split(" ", -1);
@@ -127,18 +126,22 @@ public class Crawler {
                                 int commentNegativeSentiment = Math.abs(Integer.valueOf(sentiAnalysis[1]));
                                 int commentNeutralSentiment = Math.abs(Integer.valueOf(sentiAnalysis[2]));
 
-                                if (commentPositiveSentiment > commentNegativeSentiment && commentPositiveSentiment > commentNeutralSentiment) {
+                                if (commentPositiveSentiment > commentNegativeSentiment &&
+                                        commentPositiveSentiment > commentNeutralSentiment) {
                                     dataSentiment = "Positive";
                                 }
 
-                                if (commentNegativeSentiment > commentPositiveSentiment && commentNegativeSentiment > commentNeutralSentiment) {
+                                if (commentNegativeSentiment > commentPositiveSentiment &&
+                                        commentNegativeSentiment > commentNeutralSentiment) {
                                     dataSentiment = "Negative";
                                 }
 
-                                if (commentNeutralSentiment > commentNegativeSentiment && commentNeutralSentiment > commentPositiveSentiment || commentPositiveSentiment == commentNegativeSentiment) {
+                                if (commentNeutralSentiment > commentNegativeSentiment &&
+                                        commentNeutralSentiment > commentPositiveSentiment ||
+                                        commentPositiveSentiment == commentNegativeSentiment) {
                                     dataSentiment = "Neutral";
                                 }
-                                redditDatabaseConnection.addCommentToDB(commentID,redditReply, pageTitle.text().toString(),dataSentiment);
+                                redditDatabaseConnection.addCommentToDB(commentID,redditReply, pageTitle.text(),dataSentiment);
                                 commentID += 1;
                                 numberOfComments+=1;
                             }

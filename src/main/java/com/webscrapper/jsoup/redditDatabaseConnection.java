@@ -32,7 +32,7 @@ public class redditDatabaseConnection {
             if (dbConnection != null) {
                 System.out.println("Connection Successful!");
             } else {
-                System.out.println("Failed to make connection!");
+                System.out.println("Failed to make connection! Please check and make sure you have the correct database!");
             }
         } catch (SQLException e) {
             System.out.println("MySQL Connection Failed!");
@@ -59,7 +59,6 @@ public class redditDatabaseConnection {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        // Let's iterate through the java ResultSet
         return !rs.isBeforeFirst();
     }
 
@@ -81,7 +80,6 @@ public class redditDatabaseConnection {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        // Iterate through the java ResultSet
         return !rs.isBeforeFirst();
     }
 
